@@ -1,0 +1,16 @@
+<!DOCTYPR html>
+<html>
+    <head></head>
+    <body>
+        <h1>Protectoras</h1>
+
+        {% for post in protectora_mostrar %}
+            <article>
+                <h2> Nombre: {{ post.nombre}} </h2>
+                <p> Descripción: {{ post.descripcion }}</p>
+                <p> Fecha de creación: {{ post.fecha_creacion }}</p><br>
+            </article>
+        {% endfor %}
+
+    </body>
+</html>

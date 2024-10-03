@@ -1,0 +1,16 @@
+<!DOCTYPR html>
+<html>
+    <head></head>
+    <body>
+        <h1>Colaborador</h1>
+
+        {% for post in colaborador_mostrar %}
+            <article>
+                <h2> Nombre: {{ post.nombre}} </h2>
+                <p> Cargo {{ post.cargo }}</p>
+                <p> fecha: {{ post.fecha_entrada_protectora }}</p>
+            </article>
+        {% endfor %}
+
+    </body>
+</html>

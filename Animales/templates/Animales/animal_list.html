@@ -1,0 +1,16 @@
+<!DOCTYPR html>
+<html>
+    <head></head>
+    <body>
+        <h1>Animales</h1>
+
+        {% for post in animal_mostrar %}
+            <article>
+                <h2> Cuidador: {{ post.cuidador}} </h2>
+                <p> Nombre: {{ post.nombre }}</p>
+                <p> Tipo: {{ post.tipo }}</p><br>
+            </article>
+        {% endfor %}
+
+    </body>
+</html>
